@@ -1,0 +1,91 @@
+Data Structure requested by the user:   Queue
+
+
+Operation Requested:   Add   2
+2 enqueued onto the queue.
+Elements present in the queue:   2   
+
+
+Operation Requested:   Add   3
+3 enqueued onto the queue.
+Elements present in the queue:   2   3   
+
+
+Operation Requested:   Add   1
+1 enqueued onto the queue.
+Elements present in the queue:   2   3   1   
+
+
+Operation Requested:   Add   2
+2 enqueued onto the queue.
+Elements present in the queue:   2   3   1   2   
+
+
+Operation Requested:   Add   3
+3 enqueued onto the queue.
+Elements present in the queue:   2   3   1   2   3   
+
+
+Operation Requested:   Add   1
+1 enqueued onto the queue.
+Elements present in the queue:   2   3   1   2   3   1   
+
+
+Operation Requested:   Add   2
+2 enqueued onto the queue.
+Elements present in the queue:   2   3   1   2   3   1   2   
+
+
+Operation Requested:   Add   3
+3 enqueued onto the queue.
+Elements present in the queue:   2   3   1   2   3   1   2   3   
+
+
+Operation Requested:   Add   1
+1 enqueued onto the queue.
+Elements present in the queue:   2   3   1   2   3   1   2   3   1   
+
+
+Operation Requested:   Add   2
+2 enqueued onto the queue.
+Elements present in the queue:   2   3   1   2   3   1   2   3   1   2   
+
+
+Operation Requested:   Add   3
+Queue is Full. Wait until someone dequeues an element to enqueue your new element
+Elements present in the queue:   2   3   1   2   3   1   2   3   1   2   
+
+
+Operation Requested:   Add   1
+Queue is Full. Wait until someone dequeues an element to enqueue your new element
+Elements present in the queue:   2   3   1   2   3   1   2   3   1   2   
+
+
+Operation Requested:   Delete
+2 dequeued from the queue
+Elements present in the queue:   3   1   2   3   1   2   3   1   2   
+
+
+Operation Requested:   Delete
+3 dequeued from the queue
+Elements present in the queue:   1   2   3   1   2   3   1   2   
+
+
+Operation Requested:   Add   2
+2 enqueued onto the queue.
+Elements present in the queue:   1   2   3   1   2   3   1   2   2   
+
+
+Operation Requested:   Add   3
+3 enqueued onto the queue.
+Elements present in the queue:   1   2   3   1   2   3   1   2   2   3   
+
+
+Operation Requested:   Add   1
+Queue is Full. Wait until someone dequeues an element to enqueue your new element
+Elements present in the queue:   1   2   3   1   2   3   1   2   2   3   
+
+
+You have requested to Exit from the application.
+Thank You for using our Stack & Queue application.
+Have a good day. Bye Bye....
