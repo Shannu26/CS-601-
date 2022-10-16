@@ -23,6 +23,8 @@ class PPT{
 		}
 	}
 
+	public static long naiveRecursiveLogic(int x, int y)
+
 	public static void main(String args[]){
 		
 	}
