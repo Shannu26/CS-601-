@@ -66,6 +66,7 @@ class Question2{
 		System.out.print("\nEnter the value you want to search: ");
 		int searchValue = s.nextInt();
 		int result = search(heap, 0, searchValue);
-		System.out.println(result);
+		if(result == -1) System.out.println(searchValue + " not present in the heap");
+		else System.out.println(searchValue + " present at index " + result + " in the heap");
 	}
 }
