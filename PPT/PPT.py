@@ -1,3 +1,34 @@
+def naiveIterativeLogic(x, y):
+
+    finalProduct = 0
+    shift = 1
+    yCopy = y
+    while x != 0:
+        tempProduct = 0
+        multiplier = 1
+        carry = 0
+        y = yCopy
+        xLast = x % 10
+        x = x // 10
+
+        while y != 0:
+            yLast = y % 10
+            product = xLast * yLast
+            product += carry
+            carry = product // 10
+            product = product % 10
+            tempProduct += product * multiplier 
+            multiplier *= 10
+            y = y // 10
+
+        tempProduct += carry * multiplier
+        finalProduct += tempProduct * shift
+        shift *= 10
+
+    return finalProduct
+
+
+
 from math import ceil, floor
 #math.ceil(x) Return the ceiling of x as a float, the smallest integer value greater than or equal to x.
 #math.floor(x) Return the floor of x as a float, the largest integer value less than or equal to x.
@@ -24,8 +55,6 @@ def naiveRecursiveLogic(x,y):
 
     return int(a*(10**(m*2)) + (b + c) *(10**m) + d)
 
-print(naiveRecursiveLogic(12345, 45678))
-
 from math import ceil, floor
 #math.ceil(x) Return the ceiling of x as a float, the smallest integer value greater than or equal to x.
 #math.floor(x) Return the floor of x as a float, the largest integer value less than or equal to x.
@@ -51,5 +80,10 @@ def karatsuba(x,y):
 
     return int(a*(10**(m*2)) + e*(10**m) + d)
 
-print(karatsuba(12345, 45678))
+x = int(input())
+y = int(input())
+print(naiveIterativeLogic(x, y))
+print(naiveRecursiveLogic(x, y))
+print(karatsuba(x, y))
+
 
