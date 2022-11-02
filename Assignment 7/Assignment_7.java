@@ -25,20 +25,26 @@ class Assignment_7{
 	}
 
 	public static ArrayList<Integer> placeTowers(int[] distances){
+		// Sorting the distance array in ascending order
 		Arrays.sort(distances);
 		ArrayList<Integer> towerPositions = new ArrayList<>();
 		if(distances.length == 0) return towerPositions;
-
+		// First tower is as far down the road as possible
 		towerPositions.add(distances[0] + 4);
+		// Index of Latest Tower which is 0 that we added above
 		int lastTowerIndex = 0;
 
 		for(int index = 1;index < distances.length;index++){
+			// If House at index has no service
 			if(Math.abs(distances[index] - towerPositions.get(lastTowerIndex)) > 4){
+				// Build next tower as far down the road as possible.
 				towerPositions.add(distances[index] + 4);
+				// Updating index of latest tower
 				lastTowerIndex += 1;
 			}
 		}
 
 		return towerPositions;
 	}
+
 }
